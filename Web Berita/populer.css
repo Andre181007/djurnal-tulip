@@ -1,0 +1,255 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+  padding: 0;
+}
+
+header {
+   max-height: 70px;
+   width: 98%;
+   background-color: #2E073F;
+   color: white;
+   display: flex;
+   justify-content: space-between;
+   padding: 20px;
+   align-items: center;
+   z-index: 1000;
+ }
+
+     /* Logo container */
+.logo {
+ display: flex; /* Arrange logo image and text in a row */
+ align-items: center; /* Vertically center the logo image and text */
+}
+
+     /* Adjust the logo image size */
+.logo img {
+ max-width: 400px; /* Set maximum width of the logo */
+ margin-bottom:20px ;
+
+}
+     .navbar {
+         display: flex;
+         align-items: center;
+     }
+
+     .navbar ul {
+         list-style: none;
+         display: flex;
+         gap: 40px;
+         margin: 0;
+         padding:50px;
+     }
+
+     .navbar ul li a {
+         color: white;
+         text-decoration: none;
+         font-size: 1.2em;
+         padding: 10px 15px; /* Add padding inside the box */
+         border: 2px solid white; /* Create a white border around each nav item */
+         border-radius: 5px; /* Round the corners of the boxes */
+         transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+     }
+
+     .navbar ul li a:hover {
+         background-color: #EBD3F8; /* Change background color when hovered */
+         color: #2E073F; /* Change text color on hover */
+     }
+
+     /* Search form */
+     .search {
+         display: flex;
+         align-items: center;
+     }
+
+     .search input[type="text"] {
+         padding: 10px;
+         font-size: 1.1em;
+         border: none;
+         border-radius: 5px 0 0 5px; /* Rounded left corners */
+         background-color: #f5f5f5;
+         color: #2E073F;
+         width: 200px;
+     }
+
+     .search input[type="text"]:focus {
+         outline: none;
+         
+         border-color: #f0e68c;
+     }
+     
+     .search button {
+         padding: 10px 20px;
+         font-size: 1.1em;
+         border: none;
+         background-color: #EBD3F8;
+         color: #3c1f47;
+         border-radius: 0 5px 5px 0; /* Rounded right corners */
+         cursor: pointer;
+         transition: background-color 0.3s ease;
+     }
+
+     .search button:hover {
+         background-color: #d4b847; /* Darker yellow on hover */
+         color: white;
+     }
+     .navbar i {
+         font-size: 3em; /* Ubah ukuran sesuai kebutuhan */
+         color: white; /* Pastikan warna ikon sesuai dengan teks navigasi */
+         margin-left: 20px; /* Berikan sedikit ruang dari tautan navigasi */
+         cursor: pointer; /* Ubah kursor saat hover */
+     }
+
+     .sidebar {
+         position: fixed;
+         top: 0;
+         right: -3000px; /* Tersembunyi di luar layar */
+         width: 250px;
+         height: 100%;
+         background-color: #EBD3F8;
+         color: black;
+         padding: 20px;
+         transition: right 0.3s ease; /* Efek transisi saat muncul */
+         z-index: 1000; /* Pastikan di atas konten lainnya */
+     }
+
+     .sidebar.open {
+         right: 0; /* Menampilkan sidebar */
+     }
+
+     #simple-navbar {
+         position: fixed;
+         top: 0;
+         left: 0;
+         width: 100%;
+         align-items: center;
+         background-color: #2E073F;
+         color: white;
+         padding: 10px;
+         display: none; /* Awalnya disembunyikan */
+         z-index: 1000; /* Pastikan di atas elemen lain */
+         justify-content: space-between;
+     }
+
+     .simple-navbar{
+         display:flex;
+         justify-content: space-between;
+         max-height: 40px;
+     }
+
+     .simple-navbar ul {
+         list-style: none;
+         align-items: center;
+         display: flex;
+         gap: 20px;
+         padding: 0;
+     }
+
+     .simple-logo{
+         display: flex;
+         align-items: center;
+         padding-right: 550px;
+     }
+     
+
+
+     .simple-logo img{
+         max-width: 40px; /* Set maximum width of the logo */
+         margin:0 ;
+     }
+     
+     .simple-navbar ul li {
+         display: inline;
+         align-items: center;
+         padding: 30px;
+     }
+     
+     .simple-navbar ul li a {
+         color: white;
+         text-decoration: none;
+         font-size: 0.8em;
+         padding: 10px 15px; /* Add padding inside the box */
+         border: 2px solid white; /* Create a white border around each nav item */
+         border-radius: 5px; /* Round the corners of the boxes */
+         transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+     }
+     .simple-navbar ul li a:hover {
+         background-color: #EBD3F8; /* Change background color when hovered */
+         color: #2E073F; /* Change text color on hover */
+     }
+
+     .simple-search {
+         display: flex;
+         align-items: center;
+     }
+
+     .simple-search input[type="text"] {
+         padding: 10px;
+         font-size: 0.8em;
+         border: none;
+         border-radius: 5px 0 0 5px; /* Rounded left corners */
+         background-color: #f5f5f5;
+         color: #2E073F;
+         width: 200px;
+     }
+
+     .simple-search input[type="text"]:focus {
+         outline: none;
+         
+         border-color: #f0e68c;
+     }
+     
+     .simple-search button {
+         padding: 10px 20px;
+         font-size: 0.8em;
+         border: none;
+         background-color: #EBD3F8;
+         color: #3c1f47;
+         border-radius: 0 5px 5px 0; /* Rounded right corners */
+         cursor: pointer;
+         transition: background-color 0.3s ease;
+     }
+
+     .simple-search button:hover {
+         background-color: #d4b847; /* Darker yellow on hover */
+         color: white;
+     }
+
+     .simple-navbar i {
+         font-size: 2.5em; /* Ubah ukuran sesuai kebutuhan */
+         color: white; /* Pastikan warna ikon sesuai dengan teks navigasi */
+         margin-left: 20px; /* Berikan sedikit ruang dari tautan navigasi */
+         cursor: pointer; /* Ubah kursor saat hover */
+     }
+
+     
+
+body{
+ background-color: #f4f4f4;
+ text-align: center  ;
+ font-family:Arial, Helvetica, sans-serif ;
+}
+
+.headline{
+ background-color: white;
+ padding: 20px;
+ margin: 20px;
+ text-align: center ;
+ border: white solid;
+ border-radius: 5px;
+}
+.artikel {
+ background-color: white;
+ padding: 20px;
+ margin: 20px;
+ text-align: center ;
+ border: white solid;
+ border-radius: 5px;
+}
+footer {
+ text-align: center;
+ background-color: #3c1f47;
+ color: #fff;
+ padding: 10px;
+ margin-top: 20px;
+}
