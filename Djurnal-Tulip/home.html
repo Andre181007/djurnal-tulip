@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="icon" href="assets/imgs/logo.png">
+    <title>DJURNAL TULIP</title>
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="halaman">
+        <header>
+            <div class="logo">
+                <img src="assets/imgs/logo djurnal tulip.png" alt="DJURNAL TULIP Logo">
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="trending.html">Trending Terkini</a></li>
+                    <li><a href="populer.html">Populer</a></li>
+                </ul>
+                <form class="search" action="cari.html" method="get">
+                    <input type="text" placeholder="" name="keyword">
+                    <button type="submit"><i class='bx bx-search'></i></button>
+                </form>
+                <i class='bx bx-list-ul' id="menu-toggle"></i>
+            </nav>
+        </header>
+
+        <nav id="simple-navbar">
+            <div class="simple-navbar">
+                <div class="simple-logo">
+                    <img src="assets/imgs/logo.png" alt="DJURNAL TULIP Logo">
+                </div>
+                <ul> 
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="trending.html">Trending Terkini</a></li>
+                    <li><a href="populer.html">Populer</a></li>
+                    <form class="simple-search" action="cari.html" method="get">
+                        <input type="text" placeholder="" name="keyword">
+                        <button type="submit"><i class='bx bx-search'></i></button>
+                    </form>
+                    <i class='bx bx-list-ul' id="simple-menu-toggle"></i>
+                </ul>
+            </div>
+        </nav>
+
+        <main>
+            <div class="main-content">
+                <div class="slider-container">
+                    <button class="slide-btn prev-btn"><i class='bx bx-chevron-left'></i></button>
+                    
+                    <div class="slider-content">
+                        <div class="utama" onclick="window.location.href='wira-wiri-disungai.html'" style="cursor: pointer;">
+                            <h1>Angkutan Wira Wiri Surabaya Tercebur ke Sungai, 2 Orang Luka-luka</h1>
+                            <span class="tanggal">19 September 2024</span>
+                            <img src="assets/imgs/wirawiri disungai.png" alt="Wirawiri di Sungai" class="utama-image">
+                            <p>Transportasi pengumpan atau feeder Wira Wiri Suroboyo tiba-tiba menabrak besi pembatas. Akhirnya kendaraan beserta sopir, kernet dan 2 penumpangnya nyemplung ke kali.
+                                Suara keras tabrakan terdengar bersamaan teriakan sejumlah pengendara di kawasan Gunung Anyar arah ke UPN Surabaya.</p>
+                        </div>
+
+                        <div class="utama" onclick="window.location.href='fajar-rian.html'" style="cursor: pointer;">
+                            <h1>Rekap Hasil Final Kumamoto Masters Japan 2024: Fajar/Rian Juara, Gregoria Runner Up</h1>
+                            <span class="tanggal">17 November 2024</span>
+                            <img src="assets/imgs/fajarrian.jpg" alt="Fajar/Rian juara Kumamoto Masters 2024" class="utama-image">
+                            <p>Ganda putra Indonesia, Fajar Alfian/Muhammad Rian Ardianto berhasil menjuarai Kumamoto Masters 2024 setelah mengalahkan wakil Malaysia, Goh Sze Fei/Nur Izzuddin di partai final. Fajar/Rian menang straight game dengan skor 21-19, 21-16. Ini menjadi gelar kedua mereka di tahun 2024 setelah sebelumnya menjuarai Malaysia Open 2024.</p>
+                        </div>
+
+                        <div class="utama" onclick="window.location.href='gerhana-bulan-september.html'" style="cursor: pointer;">
+                            <h1>Gerhana Bulan Total 25 Maret 2024: Fenomena Langka yang Hanya Terjadi 2 Kali Tahun Ini</h1>
+                            <span class="tanggal">18 September 2024</span>
+                            <img src="assets/imgs/fenomena gerhana september.jpeg" alt="Gerhana Bulan Total" class="utama-image">
+                            <p>Gerhana bulan total akan terjadi pada Senin (18/09/2024) dini hari. Fenomena astronomi ini merupakan gerhana bulan pertama di tahun 2024 dan akan dapat diamati di sebagian wilayah Indonesia. BMKG menyebut puncak gerhana bulan total akan terjadi pada pukul 02.12 WIB.</p>
+                        </div>
+
+                        <div class="utama" onclick="window.location.href='mobil-terlaris-kijang-inova.html'" style="cursor: pointer;">
+                            <h1>Toyota Kijang Innova Masih Jadi Mobil Terlaris di Indonesia Tahun 2024</h1>
+                            <span class="tanggal">11 Oktober 2024</span>
+                            <img src="assets/imgs/toyota kijang inova.jpeg" alt="Toyota Kijang Innova" class="utama-image">
+                            <p>Toyota Kijang Innova tetap mempertahankan posisinya sebagai mobil terlaris di Indonesia sepanjang tahun 2024. Data penjualan menunjukkan peningkatan signifikan dibanding tahun sebelumnya, dengan total penjualan mencapai 50.000 unit dalam tiga bulan pertama tahun ini.</p>
+                        </div>
+                    </div>
+
+                    <button class="slide-btn next-btn"><i class='bx bx-chevron-right'></i></button>
+                </div> 
+                <div class="artikel-vertikal">
+                    <article onclick="window.location.href='wira-wiri-disungai.html'" style="cursor: pointer;">
+                        <img src="assets/imgs/wirawiri disungai.png" alt="Wirawiri di Sungai" class="artikel-image">
+                        <div class="artikel-info">
+                            <span class="tanggal">19 September 2024</span>
+                            <h2>Angkutan Wira Wiri Surabaya Tercebur ke Sungai, 2 Orang Luka-luka</h2>
+                        </div>
+                    </article>
+                    <article onclick="window.location.href='fajar-rian.html'" style="cursor: pointer;">
+                        <img src="assets/imgs/fajarrian.jpg" alt="Fajar/Rian juara Kumamoto Masters 2024" class="artikel-image">
+                        <div class="artikel-info">
+                            <span class="tanggal">17 November 2024</span>
+                            <h2>Rekap Hasil Final Kumamoto Masters Japan 2024: Fajar/Rian Juara, Gregoria Runner Up</h2>
+                        </div>
+                    </article>
+                    <article onclick="window.location.href='gerhana-bulan-september.html'" style="cursor: pointer;">
+                        <img src="assets/imgs/fenomena gerhana september.jpeg" alt="Gerhana Bulan Total" class="artikel-image">
+                        <div class="artikel-info">
+                            <span class="tanggal">18 September 2024</span>
+                            <h2>Gerhana Bulan Total 25 Maret 2024: Fenomena Langka yang Hanya Terjadi 2 Kali Tahun Ini</h2>
+                        </div>
+                    </article>
+                    <article onclick="window.location.href='mobil-terlaris-kijang-inova.html'" style="cursor: pointer;">
+                        <img src="assets/imgs/toyota kijang inova.jpeg" alt="Toyota Kijang Innova" class="artikel-image">
+                        <div class="artikel-info">
+                            <span class="tanggal">11 Oktober 2024</span>
+                            <h2>Toyota Kijang Innova Masih Jadi Mobil Terlaris di Indonesia Tahun 2024</h2>
+                        </div>
+                    </article>
+                </div>
+                
+                <div class="content-wrapper">
+                    <div class="artikel-container">
+                        <div class="artikel" onclick="window.location.href='media-asing-acungi-jempol-timnas.html'" style="cursor: pointer;">
+                            <img src="assets/imgs/timnas indonesia.jpg" alt="Suporter Timnas Indonesia" class="artikel-image">
+                            <span class="tanggal">17 November 2024</span>
+                            <h2>Media Asing Acungi Jempol Suporter Timnas Indonesia: Meski Kalah dari Jepang tapi Memuji Pemain</h2>
+                        </div>
+
+                        <div class="artikel" onclick="window.location.href='prabowo-kirim-tim-brasil.html'" style="cursor: pointer;">
+                            <img src="assets/imgs/prabowo kirim tim brasil.jpg" alt="Prabowo kirim tim" class="artikel-image">
+                            <span class="tanggal">18 November 2024</span>
+                            <h2>Prabowo Bakal Kirim Tim ke Brasil, Pelajari Program Makan Bergizi</h2>
+                        </div>
+                        
+                        <div class="artikel" onclick="window.location.href='pembalap-hokky-krisdianto.html'" style="cursor: pointer;">
+                            <img src="assets/imgs/hokky krisdianto.webp" alt="Hokky Krisdianto" class="artikel-image">
+                            <span class="tanggal">18 November 2024</span>
+                            <h2>Mantan Pembalap Hokky Krisdianto Meninggal Dunia Akibat Kecelakaan di Situbondo</h2>
+                        </div>
+
+                        <div class="artikel" onclick="window.location.href='anies-baswedan-di-baliho-pramono.html'" style="cursor: pointer;">
+                            <img src="assets/imgs/pakaian dan gaya anies.webp" alt="Anies Baswedan di Baliho Pramono" class="artikel-image">
+                            <span class="tanggal">19 November 2024</span>
+                            <h2>Pakaian dan Gaya Anies Baswedan di Baliho Pramono Anung-Rano Karno Bikin Salah Fokus</h2>
+                        </div>
+
+                        <div class="artikel" onclick="window.location.href='kampanye-akbar-pramono-rano.html'" style="cursor: pointer;">
+                            <img src="assets/imgs/kampanye akbar pramono-rano.webp" alt="Kampanye Akbar Pramono-Rano" class="artikel-image">
+                            <span class="tanggal">19 November 2024</span>
+                            <h2>Bakal Ada Kejutan dalam Kampanye Akbar Pramono-Rano di GBK, Apa Itu?</h2>
+                        </div>
+
+                        <div class="artikel" onclick="window.location.href='timnas-indonesia.html'" style="cursor: pointer;">
+                            <img src="assets/imgs/timnas indo dihantui.jpg" alt="Timnas Indonesia" class="artikel-image">
+                            <span class="tanggal">19 November 2024</span>
+                            <h2>Timnas Indonesia Dihantui Keretakan Jelang Laga Kontra Arab Saudi,Shin Tae-yong Penyebabnya?</h2>
+                        </div>
+
+                        <div class="artikel" onclick="window.location.href='thom-haye-minta-fans.html'" style="cursor: pointer;">
+                            <img src="assets/imgs/thom haye.jpeg" alt="Thom Haye" class="artikel-image">
+                            <span class="tanggal">19 November 2024</span>
+                            <h2>Thom Haye Minta Fans Jangan Berhenti Support Timnas Indonesia</h2>
+                        </div>
+
+                        <div class="artikel" onclick="window.location.href='kevindiks.html'" style="cursor: pointer;">
+                            <img src="assets/imgs/kevin diks.jpg" alt="Kevin Diks" class="artikel-image">
+                            <span class="tanggal">19 November 2024</span>
+                            <h2>Kevin Diks Pamit ia JeKeluar dari Skuad Indonesia Jelang Lawan Arab Saudi</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <div id="sidebar" class="sidebar">
+            <div class="login-section">
+                <h2>Login</h2>
+                <form class="login-form">
+                    <input type="text" placeholder="Username" required>
+                    <input type="password" placeholder="Password" required>
+                    <button type="submit">Masuk</button>
+                </form>
+                <p class="register-link">Belum punya akun? <a href="daftar.html">Daftar</a></p>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="footer-container">
+
+              <div class="footer-section footer-logo">
+                <img src="assets/imgs/logo djurnal tulip.png" alt="DJURNAL TULIP Logo">
+                <p>Menyajikan berita terhangat langsung melalui handphone Anda</p>
+              </div>
+        
+
+              <div class="footer-section footer-navigation">
+                <a href="home.html">HOME</a>
+                <a href="trending.html">TRENDING</a>
+                <a href="populer.html">POPULER</a>
+                <a href="about-us.html">ABOUT US</a>
+                <a href="comment.html">COMMENT</a>
+              </div>
+  
+              <div class="footer-section footer-social">
+                <a href="https://youtube.com/@djurnaltulip?si=enYyAhBDsJCdrwjH"><img src="assets/imgs/youtube.ico" alt="YouTube"></a>
+                <a href="https://www.instagram.com/djurnal.tulip?igsh=MTJjN3VobDduODE1bw=="><img src="assets/imgs/instagram.ico" alt="Instagram"></a>
+                <a href="https://wa.me/qr/WED4P5I466XMI1"><img src="assets/imgs/whatsapp.ico" alt="WhatsApp"></a>
+                <a href="https://www.facebook.com/profile.php?id=61568877486069&mibextid=ZbWKwL"><img src="assets/imgs/facebook.ico" alt="Facebook"></a>
+              </div>
+            </div>
+          </footer>
+    </div>
+
+    <script src="assets/js/nav.js"></script>
+</body>
+
+</html>
